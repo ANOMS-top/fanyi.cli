@@ -1,6 +1,8 @@
 # fanyi.cli
 一个基于百度翻译API的命令行的翻译软件。
 
+[Reading in English](README.md)
+
 ## 安装
 直接下载`fanyi.cli.py`即可。
 
