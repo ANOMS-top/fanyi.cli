@@ -1,5 +1,5 @@
 # fanyi.cli
-一个基于百度翻译API的命令行的翻译软件。
+一个基于百度翻译API的命令行翻译软件。
 
 [Reading in English](README.md)
 
