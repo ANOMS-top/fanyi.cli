@@ -7,20 +7,23 @@
 直接下载`fanyi.cli.py`即可。
 
 ## 初次上手
-### 对于Linux用户（可能还包括macOS用户）
+### 1. 对于Linux用户（可能还包括macOS用户）
 直接运行 `./fanyi.cli.py` 即可。如果报错，请检查是否安装了python3，以及是否将python3的可执行文件或者符号链接添加到了 `/usr/bin`目录下，然后再试一次。
 
-### 对于Windows用户
+### 2. 对于Windows用户
 确认是否在电脑上安装了python3。然后在命令行窗口中运行 `python3 fanyi.cli.py`。
 
-### 语言支持
+### 3. 语言支持
 本程序目前仅支持中译英和英译中。可以通过添加`-z`, `-c`或者`-e`参数以指定翻译到哪一种语言。如果不指定，程序将自动选择翻译的目标语言。
 
-### 翻译文件
+### 4. 翻译文件
 本程序目前仅支持纯文本文件的翻译（例如，`.txt`后缀的文件）。可以通过添加 `-f [FILE PATH]` 参数指定文件翻译模式。
 
+### 5. 退出交互式界面
+在交互式界面中输入`exit`或`quit`指令即可。
+
 ## 示例
-### 翻译文字
+### 1. 翻译文字
 ```
 $ fanyi.cli.py
 # Input text:
@@ -29,14 +32,14 @@ Speaking a foreign language is a high demand skill because of domestic cultural 
 由于国内文化的多样性和在国外做生意的公司的数量，说一门外语是一项高要求的技能。外语技能可以通过提高你的资历来帮助你找到工作。
 ```
 
-### 从标准输入输出中进行翻译
+### 2. 从标准输入输出中进行翻译
 ```
 $ fanyi.cli.py -t "Our understanding of the distribution of genetic variation in natural populations has been driven by mathematical models of the underlying biological and demographic processes. A key strength of such coalescent models is that they enable efficient simulation of data we might see under a variety of evolutionary scenarios."
 # Result:
 我们对自然种群中遗传变异分布的理解是由潜在生物和人口过程的数学模型驱动的。这种结合模型的一个关键优势是，它们能够有效地模拟我们在各种进化场景下可能看到的数据。
 ```
 
-### 翻译文件
+### 3. 翻译文件
 ```
 $ fanyi.cli.py --ori -f 'The Selfish Gene.txt'  # use `--ori` argument to show origin text.
 # Origin:
