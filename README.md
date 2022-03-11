@@ -7,20 +7,23 @@ A CLI language translator using Baidu translation API
 Just Download `fanyi.cli.py` directly.
 
 ## Usage
-### For Linux user(and may be for macOS user):
+### 1. For Linux user(and may be for macOS user):
 You can run `./fanyi.cli.py` directly. If it cannot work, just check if you have installed python3 on your computer and if you have add a symbolic link of `python3` in `/usr/bin`, and try it again.
 
-### For Windows user:
+### 2. For Windows user:
 Check if you have installed python3 on your machine firstly. Then run `python3 fanyi.cli.py`
 
-### Language support
+### 3. Language support
 Right now this applet only support "Chinese > English" and "English > Chinese" translating. You can specific `-z`, `-c` or `-e` argument to choose target language, besides the applet will choose target language automately.
 
-### Translate file
+### 4. Translate file
 Right now this applet only support plain text file(like `.txt` file). You can specific `-f [FILE PATH]` argument to use this mode.
 
+### 5. Exit
+Type `exit` or `quit` in the Interactive interface.
+
 ## Example
-### Translating words
+### 1. Translating words
 ```
 $ fanyi.cli.py
 # Input text:
@@ -29,14 +32,14 @@ Speaking a foreign language is a high demand skill because of domestic cultural 
 由于国内文化的多样性和在国外做生意的公司的数量，说一门外语是一项高要求的技能。外语技能可以通过提高你的资历来帮助你找到工作。
 ```
 
-### Translating from standard i/o
+### 2. Translating from standard i/o
 ```
 $ fanyi.cli.py -t "Our understanding of the distribution of genetic variation in natural populations has been driven by mathematical models of the underlying biological and demographic processes. A key strength of such coalescent models is that they enable efficient simulation of data we might see under a variety of evolutionary scenarios."
 # Result:
 我们对自然种群中遗传变异分布的理解是由潜在生物和人口过程的数学模型驱动的。这种结合模型的一个关键优势是，它们能够有效地模拟我们在各种进化场景下可能看到的数据。
 ```
 
-### Translating from file
+### 3. Translating from file
 ```
 $ fanyi.cli.py --ori -f 'The Selfish Gene.txt'  # use `--ori` argument to show origin text.
 # Origin:
